@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Desktop\Git_NewRepository(Car Rental)\Git_EntitiesAndDatabase\CarRental\CarRentalDatabase\CarRentalDatabase.csproj" />
+    <ProjectReference Include="..\..\Git_EntitiesAndDatabase\CarRental\CarRentalDatabase\CarRentalDatabase.csproj" />
   </ItemGroup>
 
 </Project>

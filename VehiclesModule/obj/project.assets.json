@@ -2251,13 +2251,13 @@
     },
     "CarRentalDatabase/1.0.0": {
       "type": "project",
-      "path": "../../Desktop/Git_NewRepository(Car Rental)/Git_EntitiesAndDatabase/CarRental/CarRentalDatabase/CarRentalDatabase.csproj",
-      "msbuildProject": "../../Desktop/Git_NewRepository(Car Rental)/Git_EntitiesAndDatabase/CarRental/CarRentalDatabase/CarRentalDatabase.csproj"
+      "path": "../../Git_EntitiesAndDatabase/CarRental/CarRentalDatabase/CarRentalDatabase.csproj",
+      "msbuildProject": "../../Git_EntitiesAndDatabase/CarRental/CarRentalDatabase/CarRentalDatabase.csproj"
     },
     "CarRentalEntities/1.0.0": {
       "type": "project",
-      "path": "../../Desktop/Git_NewRepository(Car Rental)/Git_EntitiesAndDatabase/CarRental/CarRentalEntities/CarRentalEntities.csproj",
-      "msbuildProject": "../../Desktop/Git_NewRepository(Car Rental)/Git_EntitiesAndDatabase/CarRental/CarRentalEntities/CarRentalEntities.csproj"
+      "path": "../../Git_EntitiesAndDatabase/CarRental/CarRentalEntities/CarRentalEntities.csproj",
+      "msbuildProject": "../../Git_EntitiesAndDatabase/CarRental/CarRentalEntities/CarRentalEntities.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2276,11 +2276,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Downloads\\VehiclesModule\\VehiclesModule.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Git_NewRepository(Car Rental)\\GitVehicalModuleLatest\\VehiclesModule\\VehiclesModule.csproj",
       "projectName": "VehiclesModule",
-      "projectPath": "C:\\Users\\Admin\\Downloads\\VehiclesModule\\VehiclesModule.csproj",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Git_NewRepository(Car Rental)\\GitVehicalModuleLatest\\VehiclesModule\\VehiclesModule.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Downloads\\VehiclesModule\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Git_NewRepository(Car Rental)\\GitVehicalModuleLatest\\VehiclesModule\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
