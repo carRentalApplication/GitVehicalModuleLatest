@@ -26,17 +26,21 @@ namespace VehiclesModule.Services
         }
         public string SendPendingSMS(Booking booking)
         {
-            string To = "+91 " + booking.TravellerNumber.ToString();
+            // Remove the "+91" prefix from the phone number
+            string To = booking.TravellerNumber.ToString();
             string message1 = "\nDear " + booking.TravellerName + ",\n Your Request Received successfully." +
                 "We will Review your application and contact you later";
+
             var message = MessageResource.Create(
                 to: new PhoneNumber(To),
                 from: new PhoneNumber(_phoneNumber),
                 body: message1,
                 client: this.restClient
-                );
+            );
+
             return message.Sid;
         }
+
         public void SendConfirmationSMS(Booking booking)
         {
             string To = "+91 " + booking.TravellerNumber.ToString();

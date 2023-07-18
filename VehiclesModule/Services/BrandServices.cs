@@ -21,6 +21,11 @@ namespace VehiclesModule.Services
             {
                 return new BadRequestResult();
             }
+            var existBrand = await _context.Brands.FirstOrDefaultAsync(e => e.BrandName == brand.BrandName);
+            if (existBrand !=null)
+            {
+                return null;
+            }
             _context.Brands.Add(brand);
             await _context.SaveChangesAsync();
 
@@ -56,9 +61,7 @@ namespace VehiclesModule.Services
             {
                 return new BadRequestResult();
             }
-
             _context.Entry(brand).State = EntityState.Modified;
-
             try
             {
                 await _context.SaveChangesAsync();
@@ -74,7 +77,6 @@ namespace VehiclesModule.Services
                     throw;
                 }
             }
-
             return new NoContentResult();
         }
 

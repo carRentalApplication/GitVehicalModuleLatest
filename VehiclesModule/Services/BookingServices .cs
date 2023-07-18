@@ -96,13 +96,16 @@ namespace VehiclesModule.Services
         public async Task<ActionResult<List<Booking>>> GetBookingsByUserId(string strUserId)
         {
             Guid UserId = new Guid(strUserId);
-            var booking = await _context.Bookings
+            List<Booking> bookings = await _context.Bookings
                 .Include(s => s.Status)
                 .Include(p => p.PaymentType)
                 .Include(u => u.AuthUser)
-                .Include(v=>v.Vehicle).Where(b => b.AuthUser.UserId == UserId).ToListAsync();
+                .Include(v => v.Vehicle).ThenInclude(e => e.VehicleImages)
+                .Include(v => v.Vehicle).ThenInclude(e => e.Brand)
+               .Where(b => b.AuthUser.UserId == UserId).ToListAsync();
 
-            return booking;
+
+            return bookings;
 
         }
 
