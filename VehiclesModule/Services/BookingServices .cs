@@ -9,11 +9,13 @@ namespace VehiclesModule.Services
     public class BookingServices : IBookingServices
     {
         private readonly CarRentalDbContext _context;
+        private readonly TwilioServices _service;
 
 
-        public BookingServices(CarRentalDbContext context)
+        public BookingServices(CarRentalDbContext context,TwilioServices services)
         {
             _context = context;
+            _service = services;
 
         }
 
@@ -73,7 +75,7 @@ namespace VehiclesModule.Services
 
             await _context.SaveChangesAsync();
             // Calculate the total amount based on pick-up and drop-off dates
-            
+            _service.SendConfirmationSMS(bookingDeatils);
             return bookingDeatils;
         }
 
@@ -141,6 +143,7 @@ namespace VehiclesModule.Services
             Booking booking=GetBookingFromBookingModel(authUser, status, vehicle,paymentType,model);
             await _context.Bookings.AddAsync(booking);
             await _context.SaveChangesAsync();
+            _service.SendPendingSMS(booking);
             return new CreatedAtActionResult("GetBooking", "Booking", new { id = booking.BookingId }, booking);
 
         }

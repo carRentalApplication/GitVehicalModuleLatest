@@ -363,3 +363,6 @@ C:\Users\Admin\Desktop\Git_NewRepository(Car Rental)\GitVehicalModuleLatest\Vehi
 C:\Users\Admin\Desktop\Git_NewRepository(Car Rental)\GitVehicalModuleLatest\VehiclesModule\obj\Debug\net6.0\VehiclesModule.pdb
 C:\Users\Admin\Desktop\Git_NewRepository(Car Rental)\GitVehicalModuleLatest\VehiclesModule\obj\Debug\net6.0\VehiclesModule.genruntimeconfig.cache
 C:\Users\Admin\Desktop\Git_NewRepository(Car Rental)\GitVehicalModuleLatest\VehiclesModule\obj\Debug\net6.0\ref\VehiclesModule.dll
+C:\Users\Admin\Desktop\Git_NewRepository(Car Rental)\GitVehicalModuleLatest\VehiclesModule\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Admin\Desktop\Git_NewRepository(Car Rental)\GitVehicalModuleLatest\VehiclesModule\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\Git_NewRepository(Car Rental)\GitVehicalModuleLatest\VehiclesModule\bin\Debug\net6.0\Twilio.dll
